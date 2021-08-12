@@ -1,0 +1,113 @@
+Plain text found in the generic .res files in \data:
+Use ResViewer to extract/import and hex editor to edit subfiles.
+
+RESOURCE FILE
+-------------
+subfile#	contents
+____________________
+
+
+RESBABL2.RES
+------------
+3	main menu, medal names
+13	miss1 debriefing
+15	10
+17	11
+19	12
+21	13
+23	14
+25	15
+27	16
+29	17
+31	no debriefing
+33	19
+35	2
+37	20
+39	21
+41	22
+43	23
+45	24
+47	25
+49	26
+51	27
+53	no debriefing
+55	29
+57	3
+59	30
+63	31
+65	32
+67	33
+69	34
+71	35
+73	37
+75	38
+77	39
+79	4
+81	46
+83	47
+85	5
+87	6
+89	7
+91	8
+93	9
+
+
+RESCUSTM.RES
+------------
+21	Random mission generator
+
+
+RESGAME.RES
+-----------
+6	freefall12							// Free Fall was Terra Nova's working title
+15	SFC callsigns and names
+16	saving/loading
+17	weapon names, PBA HUD
+18	squad ordering and replies, squad reactions, ASF names, commands on frobbable objects in certain missions, exit mission confirmations
+19	simulator missions					// interesting...
+20	damage status
+21	various stuff, map text, objectives, mission status
+22	options screen
+23	SFC ranks
+24	mission objectives
+25	promotions
+26	specific object names
+27	tutorial help
+28	scripted comments in some missions, dropship comments
+29	tutorial instructor
+30	(weapon, suit, ASF) status
+31	abbrevations
+32	generic object names
+33	enemy names
+34	enemy vehicles
+35	drones, enemy vehicles
+36	enemy buildings
+100	booting up PBA
+102	statistics after winning the game
+
+
+RESHELM.RES & RESHLMHI.RES
+--------------------------
+80	demolition
+81	scripted comments, possibly demolition related
+
+
+RESMISS.RES
+-----------
+7	mission names
+
+
+RESPLNT0.RES - RESPLNT4.RES
+---------------------------
+12	texture types
+
+
+RESPTERM.RES
+------------
+2	description of (enemies, weapons, ASFs, PBAs, SFC members), statistics
+3	e-mails
+4	news
+5	history
+6	briefings
+7	credits
+8	killboard

@@ -1,0 +1,54 @@
+Gigamap 1.2
+-----------
+
+General
+-------
+Gigamap extracts the texture mapping information from a Terra Nova level and passes this to a batch file, which instructs ImageMagick to piece together small tiles into a giant texture map of the level.
+
+
+Installing
+----------
+Unzip Gigamap into a directory, download ImageMagick (Q8 version strongly recommended) from http://www.imagemagick.org and install it, then copy convert.exe and montage.exe into the directory Gigamap is in.
+
+If you are using Terragen (http://www.planetside.co.uk/terragen), you'll need the SOPack plugin (http://www2.cs.uh.edu/~somalley/sopack.html) to apply the texture map to the terrain.
+
+
+Usage
+-----
+Gigamap is a command line program. When you start the program, you will be asked for some parameters:
+
+-Mapfile to open
+	Type either an absolute (d:\tnova\maps\arena.res) or relative filename (maps\arena.res).
+-Tiles to skip (0...10)
+	Enter how many tiles to skip after drawing one (a large number results in a crude map that is compiled faster).
+-Resizing factor (1...100 %)
+	A smaller image is compiled faster and uses less memory (important when handling huge files).
+-Texture map type
+	Enter the key for either low-, high resolution or both types.
+	
+Once the program has extracted texture mapping information, it will create one or two batch files: mapLo.bat for the low-resolution map and mapHi.bat for the high-resolution one. You start the texture compiling process by executing the batch file you want.
+
+
+Warning!
+--------
+The largest possible texture map is one gigapixel (hence the name Gigamap): a 32832*32832 pixel GIF (several hundred megabytes). Creating such a file may take several hours, and you may need to leave the command prompt active and not use any other programs during the creation of the texture map. Remember to copy your texture map somewhere safe after you have created it, since making another map will overwrite it.
+
+Any errors you get during the texture map compilation are most likely due to lack of memory. Try resizing to a smaller size.
+
+
+Changes since 1.1
+-----------------
+-Significantly improved batch file execution due to tiles being rotated in advance.
+
+Changes since 1.0
+-----------------
+-A bug in ImageMagick always forces 24 bit image depth, using more memory. Solved by changing file format to GIF.
+-Command line parameters changed to queries.
+-The last column and row are now included.
+-Increased speed slightly by using mogrify.exe instead of convert.exe.
+-Considerably cleaner code.
+
+
+The fine print
+--------------
+Gigamap is free to use. The source code in included, use it for your own project as long as you also release the code for it. Copyright 2007 Gigaquad.

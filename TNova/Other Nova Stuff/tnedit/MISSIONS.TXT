@@ -1,0 +1,67 @@
+Mis#  miss          Mission                   Sky         Map
+  3   MISS1.RES     OPERATION EAGLE EYE       SKY4.RES    MAP1.RES
+  4   MISS2.RES     OPERATION SHERWOOD        SKY0S.RES   MAP2.RES
+  5   MISS3.RES     OPERATION SEAGULL         SKY0.RES    MAP3.RES
+  6   MISS4.RES     OPERATION EAGLE'S ROOST   SKY0.RES    MAP4.RES
+  7   MISS5.RES     OPERATION VALKYRIE        SKY4.RES    MAP5.RES
+  8   MISS6.RES     OPERATION EAGLE'S NEST    SKY1.RES    MAP6.RES
+  9   MISS7.RES     OPERATION MARINER         SKY0.RES    MAP7.RES
+ 10   MISS8.RES     OPERATION PERISCOPE       SKY1.RES    MAP8.RES
+ 11   MISS9.RES     OPERATION IVANHOE         SKY1.RES    MAP9.RES
+ 14   MISS10.RES    OPERATION OILSLICK        SKY0.RES    MAP10.RES
+ 15   MISS11.RES    OPERATION MARKET SQUARE   SKY0.RES    MAP11.RES
+ 16   MISS12.RES    OPERATION EGGSHELL        SKY0.RES    MAP12.RES
+ 17   MISS13.RES    OPERATION CONDUCTOR       SKY0.RES    MAP13.RES
+ 24   MISS14.RES    OPERATION MERCURY         SKY4.RES    MAP14.RES
+ 20   MISS15.RES    OPERATION UNDERTOW        SKY1.RES    MAP15.RES
+ 22   MISS16.RES    OPERATION SERAPHIM        SKY0S.RES   MAP16.RES
+ 21   MISS17.RES    OPERATION IVY             SKY1.RES    MAP17.RES
+ 31   MISS19.RES    OPERATION BLOODLINE       SKY0.RES    MAP19.RES
+ 25   MISS20.RES    OPERATION BLACK WIDOW     SKY4.RES    MAP20.RES
+ 27   MISS21.RES    OPERATION AEGIS           SKY3.RES    MAP21.RES
+ 29   MISS22.RES    OPERATION SPARKPLUG       SKY1.RES    MAP22.RES
+ 30   MISS23.RES    OPERATION CADMIUM         SKY0.RES    MAP23.RES
+ 32   MISS24.RES    OPERATION FUSEBOX         SKY0.RES    MAP24.RES
+ 34   MISS25.RES    OPERATION PIGPEN          SKY2.RES    MAP25.RES
+ 35   MISS26.RES    OPERATION HYPERBOLE       SKY2.RES    MAP26.RES
+ 33   MISS27.RES    OPERATION CALAIS          SKY4.RES    MAP27.RES
+ 19   MISS29.RES    OPERATION GOBLIN          SKY1.RES    MAP29.RES
+ 36   MISS30.RES    OPERATION ICEPICK         SKY1.RES    MAP30.RES
+ 37   MISS31.RES    OPERATION ABSOLUTE ZERO   SKY1.RES    MAP31.RES
+ 12   MISS32.RES    OPERATION METEOR          SKY3.RES    MAP32.RES
+ 13   MISS33.RES    OPERATION METEORITE       SKY3.RES    MAP32.RES
+ 18   MISS34.RES    OPERATION METEOR SHOWER   SKY3.RES    MAP34.RES
+ 28   MISS35.RES    OPERATION BUZZARD         SKY2.RES    MAP35.RES
+ 23   MISS36.RES    OPERATION CROPDUSTER      SKY2.RES    MAP36.RES
+  1   MISS37.RES    OPERATION CANNONBALL      SKY0.RES    MAP37.RES
+  2   MISS38.RES    OPERATION PANAMA          SKY0.RES    MAP38.RES
+ 26   MISS39.RES    OPERATION COLD WAR        SKY4.RES    MAP39.RES
+ I1   MISS46.RES    XR-5 QUALIFICATION        SKY0.RES    MAP46.RES
+ I2   MISS47.RES    COMBAT CERTIFICATION      SKY0.RES    MAP47.RES
+      MISSAREN.RES  Arena                     SKY0.RES    ARENA.RES
+      MISSCOAS.RES  Coastline                 SKY0.RES    COAST.RES
+      MISSDVAL.RES  DeathValley               SKY2.RES    DVAL.RES
+      MISSFARM.RES  Farms                     SKY0.RES    FARM.RES
+      MISSFLAT.RES  Flatland                  SKY0.RES    FLAT.RES
+      MISSGRID.RES  Grid                      SKY0.RES    GRID.RES
+      MISSICE.RES   IcyPonds                  SKY1.RES    ICE.RES
+      MISSIMBR.RES  Lunar                     SKY3.RES    IMBR.RES
+      MISSKEEP.RES  Keep                      SKY0.RES    KEEP.RES
+      MISSLAKE.RES  Lake                      SKY0.RES    LAKE.RES
+      MISSPENN.RES  Peninsula                 SKY0.RES    PENN.RES
+      MISSSAND.RES  SandDunes                 SKY2.RES    SAND.RES
+      MISSSMUG.RES  MountainBase              SKY0.RES    SMUG.RES
+      MISSVALE.RES  Valley                    SKY0.RES    VALE.RES
+      MISSWILD.RES  Wilderness                SKY0.RES    WILD.RES
+      <none>                                  SKY0.RES    ROADMAP.RES
+      
+MISS38C.RES, MISS40.RES, MISS41.RES, MISS69.RES which are included on the CD-ROM
+will not be installed onto harddisk. And if you try to run one of these files,
+you will be told, that the mission is in an old format and that you have to
+convert the mission file.
+
+The ROADMAP.RES is a very stange landscape with extremly high mountains but it's
+worth beeing visited!
+
+The names of the missions can be found in "data/resmiss.res".
+The missions of the Random Scenario Builder can be found in "data/rescustm.res".

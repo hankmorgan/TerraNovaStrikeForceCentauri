@@ -1,0 +1,80 @@
+// Install script for Terra Nova: Strike Force Centauri CD Demo
+
+"", "", "\data", "", 4, 0
+"", "", "\sound", "", 4, 0
+"", "", "\maps", "", 4, 0
+"", "", "\speech", "", 4, 0
+
+"", "__ff.exe", "", "", 0, 2
+"\instdata\", "realtn.bat", "", "tndemo.bat", 0, 0
+"\instdata\", "info.exe", "", "info.exe", 0, 0
+
+
+"", "readme.txt",   "", "", 0, 0
+
+"\speech\", "resbrk01.res", "\speech", "", 0, 2
+"\speech\", "resbrk10.res", "\speech", "", 0, 2
+
+"\data\", "dummy.res", "\data", "", 0, 0
+"\data\", "reshelm.res", "\data", "", 0, 0
+"\data\", "reshelmn.res", "\data", "", 0, 1
+"\data\", "reshlmhi.res", "\data", "", 0, 0
+"\data\", "reshlmhn.res", "\data", "", 0, 1
+"\data\", "resmap.res", "\data", "", 0, 0
+"\data\", "ressim.res", "\data", "", 0, 0
+"\data\", "resplnt0.res", "\data", "", 0, 1
+"\data\", "resplnt4.res", "\data", "", 0, 1
+"\data\", "sky0.res", "\data", "", 0, 0
+"\data\", "sky4.res", "\data", "", 0, 0
+
+"\data\", "demobase.res", "\data", "", 0, 0
+"\data\", "demoptrm.res", "\data", "", 0, 0
+"\data\", "demosnd.res", "\data", "", 0, 0
+"\data\", "resdmobj.res", "\data", "", 0, 0
+"\data\", "demobab2.res", "\data", "", 0, 0
+"\data\", "demogam2.res", "\data", "", 0, 0
+"\data\", "demomis2.res", "\data", "", 0, 0
+
+"\maps\", "miss2d.res", "\maps", "", 0, 0
+"\maps\", "map2d.res", "\maps", "", 0, 0
+"\maps\", "miss3d.res", "\maps", "", 0, 0
+"\maps\", "map52.res", "\maps", "", 0, 0
+"\maps\", "miss4d.res", "\maps", "", 0, 0
+"\maps\", "map4d.res", "\maps", "", 0, 0
+
+"\sound", "ff.ad ", "\sound", "", 0, 0
+"\sound", "ff.opl", "\sound", "", 0, 0
+"\sound", "ff.sbk", "\sound", "", 0, 0
+
+"\sound", "adrv688.dig", "\sound", "", 0, 0
+"\sound", "jammer.dig", "\sound", "", 0, 0
+"\sound", "proaudio.dig", "\sound", "", 0, 0
+"\sound", "rap10.dig", "\sound", "", 0, 0
+"\sound", "rmagic.dig", "\sound", "", 0, 0
+"\sound", "sb16.dig", "\sound", "", 0, 0
+"\sound", "sblaster.dig", "\sound", "", 0, 0
+"\sound", "sbpro.dig", "\sound", "", 0, 0
+"\sound", "sndscape.dig", "\sound", "", 0, 0
+"\sound", "sndsys.dig", "\sound", "", 0, 0
+"\sound", "ultra.dig", "\sound", "", 0, 0
+"\sound", "umid.dig", "\sound", "", 0, 0
+
+"\sound", "adlib.mdi", "\sound", "", 0, 0
+"\sound", "adlibg.mdi", "\sound", "", 0, 0
+"\sound", "esfm.mdi", "\sound", "", 0, 0
+"\sound", "mpu401.mdi", "\sound", "", 0, 0
+"\sound", "mt32mpu.mdi", "\sound", "", 0, 0
+"\sound", "null.mdi", "\sound", "", 0, 0
+"\sound", "opl3.mdi", "\sound", "", 0, 0
+"\sound", "pas.mdi", "\sound", "", 0, 0
+"\sound", "pasplus.mdi", "\sound", "", 0, 0
+"\sound", "pcspkr.mdi", "\sound", "", 0, 0
+"\sound", "sbawe32.mdi", "\sound", "", 0, 0
+"\sound", "sblaster.mdi", "\sound", "", 0, 0
+"\sound", "sbpro1.mdi", "\sound", "", 0, 0
+"\sound", "sbpro2.mdi", "\sound", "", 0, 0
+"\sound", "sndscape.mdi", "\sound", "", 0, 0
+"\sound", "tandy.mdi", "\sound", "", 0, 0
+"\sound", "ultra.mdi", "\sound", "", 0, 0
+"\sound", "umid.mdi", "\sound", "", 0, 0
+

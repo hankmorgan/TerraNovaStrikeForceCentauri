@@ -1,0 +1,30 @@
+  0 (00)    <default name>
+  1 (01)    Unknown PBA
+  2 (02)    Hegemony Demolitions
+  3 (03)    Hegemony Artillery Squad
+  4 (04)    Cameron Locks Building
+  5 (05)    Pirate Communications Depot
+  6 (06)    Hegemony Prison
+  7 (07)    Clan Io Craft
+  8 (08)    Agamemnite Storage
+  9 (09)    Offices
+ 10 (0a)    Petrovsk Personal Shuttle
+ 11 (0b)    Hegemony Base Guard
+ 12 (0c)    Hegemony Perimeter Sentry
+ 13 (0d)    Pirate Relay Station
+ 14 (0e)    Training Base Building
+ 15 (0f)    Interplanetary Transport
+ 16 (10)    Stone Head 'Bob'
+ 17 (11)    Stone Head 'Ringo'
+ 18 (12)    Stone Head 'Dfan'
+ 19 (13)    Stone Head 'Glyco'
+ 20 (14)    Stone Head 'Lloyd'
+ 21 (15)    Hegemony Barracks
+ 22 (16)    Unidentified Aircraft
+ 23 (17)    Crate
+ 24 (18)    Unknown Object
+ 25 (19)    Storage Dome
+ 26 (1a)    Prefabricated Building
+ 27 (1b)    Pirate Hovercraft
+ 28 (1c)    Pirate Transport
+ 29 (1d)    BUG

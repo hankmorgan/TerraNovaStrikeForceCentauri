@@ -1,0 +1,198 @@
+<html>
+<head>
+<TITLE>The TNWE Documentation: Mission-Parameters and Objects</TITLE>
+</head>
+<BODY BGCOLOR=#000000 TEXT=#ffffff LINK=#6666ff VLINK=#6666aa ALINK=#6666aa>
+<CENTER>
+<A HREF="tnwehp.html"><IMG SRC="pic/tnwe01_sm.jpg" BORDER=0></A> <BR>
+<IMG SRC="pic/docu.jpg" BORDER=0> <BR>
+<h1><FONT COLOR=#88ffff>*** Mission-Parameters and Objects ***</FONT></h1>
+</CENTER><BR>
+
+<BR> <BR><BR>
+
+<h2><center><font color=#8888ff>Getting started</font></center></h2>
+<font color=#aaaaaa>
+After installation of TN and the editors all you have to do to get
+started is to select which mission-file you like to edit. 
+Depending on the TN-version you're using here is a description of how to
+get started:<BR>
+</font><BR>
+<LI> <font color=#ff8888>TN full version</font>: Here is a list of all the <A
+HREF="mission_names.txt">mission-files</A>. All mission-files
+have the name "<font color=#ffff88><tt>MISS*.RES</tt></FONT>" 
+and are located in the "<font color=#ffff88><tt>DATA</tt></font>"-directory 
+<BR>
+A quick example would be <font color=#ffff88> <tt>EDMIS DATA\MISS3.RES</tt> </font>
+<br><BR>
+<LI> <font color=#ff8888>TN demo 1</font>: There is only one mission: 
+"<font color=#ffff88><tt>MISS1D.RES</tt></FONT>".
+It is located in the "<font color=#ffff88><tt>DATA</tt></font>"-directory
+in your TN-directory.<BR>
+A quick example would be <font color=#ffff88> <tt>EDMIS DATA\MISS1D.RES</tt> </font>
+<bR> <br>
+<LI> <font color=#ff8888>TN demo 2</font>: There are three missions: 
+"<font color=#ffff88><tt>MISS2D.RES, MISS3D.RES, MISS4D.RES</tt></FONT>".
+They are located in the "<font color=#ffff88><tt>MAPS</tt></font>"-directory
+in your TN-directory.<BR>
+A quick example would be <font color=#ffff88> <tt>EDMIS MAPS\MISS2D.RES</tt> </font>
+
+<BR><BR> <BR><BR>
+<h2><center><font color=#8888ff>After starting EDMIS:</font></center></h2>
+<Center>
+All available keys (a subset of <tt>a,b,..z,A,B,...Z</tt>) 
+are displayed on the screen and are depending on the
+menu you're currently in.<BR>
+In this documentation all the keys you have to press to get a certain
+operation done are displayed in <tt>Typewriter</tt>-letters.<BR>
+For most parameters, EDMIS asks for a number. This number can be
+entered either as a decimal number (i.e. <tt>27</tt>) or an hexadecimal
+number prefixed by <tt>0x</tt> (i.e. decimal 27 would be <tt>0x1a</tt>).
+Nevertheless most values are displayed as hexadecimal numbers.
+<BR><BR>
+
+Menu 1: Mission Parameters<BR>
+<A HREF="pics/edmis03_1.gif"><IMG SRC="pics/sm/edmis03_1_sm.gif"></A>
+<BR><BR>
+On top of the screen there are listed the files which are combined with
+this mission to get a <font color=#ff8888>complete TN-mission</font>: A TN-mission consists of
+a mission-file, a map-file and a sky-file. The <font color=#dd8888>
+mission-file</font> contains
+the objects of the mission, i.e. the enemies, the buildings, the parameters
+of the mission (storm, rain, gravity...) and so on. The <font color=#dd8888>
+map-file</font> contains
+the terrain and the trees. The <font color=#dd8888>sky-file</font> contains the sky and parts of the
+palette. Inside the map-file there is a description which planet the
+mission is located on. Theoretically it is possible to locate a mission
+on planet 2 and have the sky from planet 0 (namly sky 0), but this will
+look very ugly (try it out and you will see!).<BR>
+You can change the MAP-file and the SKY-file by pressing 
+<font color=#ffff88><tt>a</tt></font>, respectivly
+<font color=#ffff88><tt>b</tt></font>.<BR>
+<BR>
+<font color=#ffff88><tt>c</tt></font> Hazing: This sets the distanz to the
+haze: Usual range: 60 to 100<BR>
+<BR>
+<font color=#ffff88><tt>d</tt></font> Temperature: Common range -52°C (Operation Meteor Shower)
+to +70°C (Operation Buzzard). <font color=#ffff88><tt>D</tt></font> allows
+you to enter the absolut value in kelvin.<BR>
+<font color=#ffff88><tt>e</tt></font> Gravity: This specifies the gravity of the planet. There are
+quite a lot of values possible, but in original TN there are only four
+different values used for
+the desert planet <tt>0x14cce</tt>, 
+the earth-like one <tt>0x1000</tt>, 
+the icy one <tt>0x0e666</tt> and the moon <tt>0x09998</tt>.<BR>
+<BR>
+<font color=#ffff88><tt>f</tt></font> Stormcode: Determines wheter the sky (clouds) are whirling
+(value 1) or not (value 0).<BR>
+<font color=#ffff88><tt>g</tt></font> WindDir: Sets the direction from
+where the wind is blowing. 0° is wind from the South, 90° is from the East,
+180° is from the North and 270° is from the West.<BR>
+<font color=#ffff88><tt>h</tt></font> Windspeed: This sets the speed of the movement of the clouds.
+Common range is 0x0000 (calm) to 0x00fa (stormy). Higher values will
+lead to twisters ;)<BR>
+<BR>
+<font color=#ffff88><tt>i</tt></font> CloudHeight: Simply the heigth of 
+the clouds. Common range: 0x380 to 0x500<BR>
+<font color=#ffff88><tt>j</tt></font> HorizonHeigth: This value is somewhat 
+twisted with CloudHeight: For a normal/goodlooking sky take the value of
+CloudHeight and add 0x80 to it to receive the value for HorzionHeigth.<BR>
+<BR>
+<font color=#ffff88><tt>k</tt></font> WhetherType and 
+<font color=#ffff88><tt>l</tt></font> WheatherDensity:<BR>
+<LI> clear (type 0) -> density 0x0000
+<LI> snow (type 1) -> density 0x0023 to 0x0050
+<LI> rain (type 2) -> density 0x0028 to 0x0050
+<BR>
+<BR>
+<BR>
+<BR>
+
+Menu 2: Mission Objects<BR>
+<A HREF="pics/edmis03_2.gif"><IMG SRC="pics/sm/edmis03_2_sm.gif"></A>
+<BR>
+Each object in the game is described by a class and a subclass. Take a look
+into <A HREF="classes.txt">classes.txt</A>, which is included in the
+TNWE-Release. This file lists all available objects in their classes.
+You can set the class and the subclass with the 
+<font color=#ffff88><tt>a</tt></font> and the 
+<font color=#ffff88><tt>A</tt></font> (shift-a) keys. The editor will
+display the actual object in plain ascii right besides the number of
+the class and the subclass.
+<BR>
+The coordinates of the object will be entered in an integer and a fractal
+value: The integer values x and y (<font color=#ffff88><tt>b</tt></font>
+and <font color=#ffff88><tt>c</tt></font>)
+describe the square (tile) the object is located on. The z-value 
+(<font color=#ffff88><tt>d</tt></font>) specifies
+its heigth above ground. The fractal values of x and y (<font
+color=#ffff88><tt>B</tt></font>(shift-b) and <font
+color=#ffff88><tt>C</tt></font>(shift-c)) specify where within a square
+the object is located. The same applies to the fractal value of z (
+<font color=#ffff88><tt>D</tt></font> (shift-D)).
+<BR>
+The theta-value describes the rotation of the object around the x-axis
+(<font color=#ffff88><tt>e</tt></font>).
+The phi-value specifies the rotation around the y-axis
+(<font color=#ffff88><tt>f</tt></font>) and
+the omega-value the rotation around the z-axis
+(<font color=#ffff88><tt>a</tt></font>).
+<BR>
+The next block of values differs depending on the class of the object.
+For easy use, take it like this: If it's an enemy or an vehicle, apply
+the "default pirate" values. If it's something else, apply the "clear
+entry", which just sets the last to blocks of values to zero. A more
+precise describtion will follow later. <BR>
+<font color=#ff8888>Note:</font> All values in this menu page are
+displayed as <font color=#ff8888>hexadecimal</font>!
+<BR>
+<font color=#ff8888>Note:</font> All coordinates are the same coordinates
+used in tnedit!
+
+<BR>
+<BR>
+<BR>
+Menu 3: Mission Groups<BR>
+<A HREF="pics/edmis03_3.gif"><IMG SRC="pics/sm/edmis03_3_sm.gif"></A>
+<BR>
+The interesting points are: 0 - the drop point and 31 - the pickup point.
+To set the drop point, press <font color=#ffff88><tt>-</tt></font> until
+you see "0: drop pt." or something similar. Then press <font
+color=#ffff88><tt>a</tt></font> to set the x-coordinate and <font
+color=#ffff88><tt>A</tt></font> (shift-a) to set the y-coordinate.
+<font color=#ff8888>Note:</font> Although you can enter the values either
+in decimal (i.e. 17) or hexadecimal (i.e. 0x1a), all values will be
+displayed in <font color=#ff8888>hexadecimal</font>!
+To set the the pickup point press <font color=#ffff88><tt>+</tt></font> until
+you see "31: pickup point" (or something similar). Then press 
+<font color=#ffff88><tt>h</tt></font> and 
+<font color=#ffff88><tt>H</tt></font> (shift-h) to set the coordinates
+(like done with the droppoint already).
+<BR>
+<font color=#ff8888>Note:</font> All coordinates are the same coordinates
+used in tnedit!
+<BR>
+<BR>
+<BR>
+<BR>
+Menu 4: Mission Map Description<BR>
+<A HREF="pics/edmis03_4.gif"><IMG SRC="pics/sm/edmis03_4_sm.gif"></A>
+<BR>
+During the game, you can take a look at a map on which some of the
+mission-objectives are painted. For instance: There is a point marking
+a pirate outpost, the pickup point and command post locations. These
+markers are defined in this section.<BR>
+Value <font color=#ffff88><tt>a</tt></font> specifies the type of the
+marker: text, rectangle or circle. Depending on the type there has
+to be specified the coordinates of the marker (x and y in the same
+coordinates, tnedit uses), maybe a radius (for the circle), maybe the
+length of the sides (for the rectangle) or the text.
+<BR>
+<font color=#ff8888>Note:</font> All coordinates are the same coordinates
+used in tnedit!
+<BR> <BR> <BR> <BR>
+<BR> <BR> <BR> <BR>
+
+<CENTER>last modified: 13/8/99 - 23:50cet<BR></CENTER>
+</BODY>
+</html>

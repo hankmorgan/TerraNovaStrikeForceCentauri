@@ -1,0 +1,48 @@
+Further information for advanced users of the Terra Nova Editor V0.42c
+======================================================================
+
+copyright 7/1998 by Joerg Fischer, jofis@cs.uni-sb.de
+Unofficial TN-homepage: http://www-wjp.cs.uni-sb.de/~jofis/terranova.html
+
+The Terra Nova uses quite a few files to describe the missions. The most 
+interesting one are the map files. They contain the landscape with the 
+evaluation data and the textures. They also contain information about the
+trees and things like that. By now I only figured out format of the 
+landscape. So changing the positions of the trees is not yet possible.
+Every map file contains two landscapes: a high resolution one and one with
+a low resolution. The high resolution one is an array of 513x513 points.
+Every point describes a square of 6m x 6m. This is the map on which you 
+actually play the game. The total area covert by this map is 3072m x 3072m
+that's appoximatly nine square kilometers. This map can be edited with
+TNEDIT. The low resolution map describes the surrounding area like the
+mountains you see at the horizon. It is an array of 257x257 points, where
+each point describes an area of 24m x 24m. The total map area which can be
+displayed in Terra Nova covers nearly 38 square kilometers. 
+Every point in the maps has information about its height above ground and
+lies in the range from -2048 to 2047. It also contains information whether
+there is a "shadow" from a hill or things like that. Shadows can be entered
+in the range from 1 to 4, where 1 is the full sun light and 4 is quite dark.
+Every point has a texture. The texture is 64x64 pixels big and there are
+about 64 textures per planet. On some planets there are more on some planets
+there are less textures. Every texture can be turned in steps of 90 degrees.
+I called this "bearing" in my editor. 
+Right now there is only one way to edit the low resolution map: You can use
+the "PCX2RES" tool to convert a 1025x1025 pixel greyscaled PCX-image to the
+height field of a map. This will generate the low and the high resolution map.
+But the low resolution map cannot be modified with TNEDIT right now. The only 
+way to view it is to select topview (STRG+V) in TNEDIT and view it (STRG+I).
+
+There is a tool called "RES2RES": This copies the map of a RES-file into
+another RES-file. That is usefule because you can keep the information about
+the trees and exchange only the maps.
+
+This is roughly my knowledgement about the Terra Nova Missions. If you want
+to have more features, edit more things or want to help developping TNEDIT
+just email me. I really would like to hear about your experiences with TNEDIT!
+
+<Sorry. End of description right now. Don't have the time to do any more...>
+
+So have fun, relax and send me your levels!
+
+Joerg Fischer
+29/7/98

@@ -1,0 +1,91 @@
+<html>
+<head>
+
+<TITLE>Terra Nova: Missions</TITLE>
+</head>
+<BODY BGCOLOR=#111111 TEXT=#ffffff LINK=#ccccff VLINK=#aaaadd ALINK=#9999aa>
+<CENTER>
+<IMG SRC="missions.gif">
+</CENTER>
+<CENTER>
+<H2>How it all works together</H2>
+</CENTER><BR><BR>
+A mission consists of a map-file, a mission-file and a sky-file.<BR>
+<BLOCKQUOTE>
+<LI>First of all the mission-file. These files contain all the information about
+the enemies: their kind, their number, their location, etc. The buildings,
+pickup and droppoint location are also defined herein. They also contain some
+kind of mission objective info, but I don't know any more about it. What
+they contain for sure is which map and which sky will be use in the mission.
+This information is written in plain ASCII and can be changed freely.(At least:
+the ASCII-characters can be changed freely. The rest of the file is pure binary
+and so you should not load this file into some kind of ASCII-texteditor. 
+I wrote a small utility which will do the exchanges for you. This MsDos-file can be
+found <A HREF="tnchmap.zip">here</A>.)<BR><BR>
+<LI>The map-file. It contains what the name suggests: the area map.<BR><BR>
+<LI>The sky-file. It contains not what the name suggests: not the sky. The sky is
+also contained in the map file. The sky-file contains some information about the
+palette and for sure some more things which I don't know yet.<BR><BR>
+</BLOCKQUOTE>
+<BR>
+Well, now you got the idea. Why not exchange some map-files and play a well known
+mission in a completly new area? First of all: This is possible. But it has some
+difficulties. (What did you expect?) Here are some rules:<BR><BR>
+<BLOCKQUOTE>
+<LI>If you change the map-file you MUST also change the sky-file. If you don't do
+so, the color palette will be at least very ugly.<BR>
+<LI>I don't know how to change the mission's objective. The mission's objective is 
+determined somewhere else - propably in one global file. So what ever you where
+supposed to do in mission x you will also be expected to do it in mission x with a 
+replaced mission-file, map-file and sky-file. Here's one example: 
+If you copy the "COLD WAR" miss-file to mission#18 ("METEOR SHOWER"),
+you will not be able to complete the mission, because you are supposed
+to destroy the telescope, but in there will not be one so you can't 
+destroy it!
+Got the problem? So think twice whether the mission can be completed.<BR>
+<LI>One method that will nearly always lead to a new and fine mission:
+Only exchange the landscape (map+sky) and leave the miss-file and the mission's
+objective untouched.<BR>
+<LI>If you try to modify the missions in the random scenery editor you have
+to be very careful. Most of the time, Terra Nova will crash down, if you
+change more than the landscape. I didn't try out much, but the only mission I could get to work was: "copy miss23.res misssand.res". <BR>
+</BLOCKQUOTE>
+<BR><BR>
+<CENTER><H2>Where to find?</H2></CENTER><BR>
+This one's easy. Let's assume the following: Terra Nova is installed on 
+your hard disk "c:\tnova". Your CD-ROM is "e:\".<BR>
+<BLOCKQUOTE>
+<LI>In "c:\tnova\tn.cfg" can be found where Terra Nova is looking for the game data.
+The following has to be include:<BR>
+<PRE>
+ maps_path c:\tnova\maps+e:\maps
+ data_path c:\tnova\data+e:\data
+</PRE>
+<LI>Just as you expeced, all the maps can be found in "\maps" and all the missions and skies
+can be found in "\data".<BR>
+<LI>If you expected to find mission#10 named as "miss10.res" you will be very disappointed. It is
+named "miss8.res". Now you think: 'Well, then, every mission number will be decreased by two!' And
+again you will be disapointed. (This is how I felt after 2 hours of trying to find out how the
+missions are mapped to the miss-files!) The correct mapping-file can be found 
+<A HREF="tnova_missions_names.txt">here</A>!<BR>
+<LI>Now you've got only one last problem: 'How can I find out what mission had what mission objective?'
+I've made a <A HREF="terra_missions.html">list</A>, where I tried to describe the missions' objectives.<BR>
+<BR>
+<CENTER><H2>Something special</H2></CENTER><BR>
+For sure, everybody knows about the demoversion of Terra Nova. If you want to play that demomission
+(Operation Madison) with some real cool weapons and with all your favourite squadmates, there's no problem
+to do so! <A HREF="http://www.lglass.com/p_info/tn_hi/download.html">Just get the demo</A>.
+ Install it. Copy "\tndemo\data\map50a.res" and "\tndemo\data\miss1d.res" to 
+"c:\tnova\data\" and rename it to a mission of your own choice and enjoy the game!<BR>
+</BLOCKQUOTE>
+<BR><BR><CENTER><H2>Final notes</H2></CENTER><BR>
+<BLOCKQUOTE>
+<LI>If you want to have the savegames for every mission of Terra Nova, just download <A HREF="tn_msav.zip">
+this</A>!<BR><BR>
+<LI>I need YOUR help! If you find out something about Terra Nova and its mission files, 
+<A HREF="mailto:jofis@cs.uni-sb.de">please let me know</A>! If you have modified some missions and they are
+really great - let me know! Propably I'll set up a page containing the best and coolest missions (and how to
+create them)!
+</BLOCKQUOTE>
+</BODY>
+</html>

@@ -1,0 +1,208 @@
+*** Class 00
+00  Tree
+01  Tree
+02  Tree
+03  Bush
+04  Bush
+05  Rock
+06  Rock
+07  Rock
+08  Rock
+09  Tree
+0a  Tree
+0b  Tree
+0c  Bush
+0d  Bush
+0e  Rock
+0f  Rock
+10  Rock
+11  Rock
+12  Rock
+13  Rock
+14  Rock
+15  Rock
+16  Rock
+17  Rock
+18  Rock
+19  Rock
+1a  
+1b  
+1c  
+1d  
+1e  
+1f  
+20  Tripod Gun
+21  Bulldozer
+22  Earth Mover
+23  BUG BUG BUG
+24  BUG BUG BUG
+25  BUG BUG BUG
+26  BUG BUG BUG
+27  BUG BUG BUG
+28  Crate
+29  Barrel
+2a  Barrel
+2b  Cargo
+2c  Sim Target
+2d  Sim Tree
+2e  Sim Bush
+2f  Sim Tree
+30  Sim Hoop
+31  Sim Drone
+32  Sim Obstacle
+33  Sim Obstacle
+34  Tree
+35  Dentonium Module
+36  Stone Head
+37  Temp Tank
+38  Light
+39  Alert Light
+3a  Destroyed Harvester
+3b  Destroyed Harvester
+
+*** Class 01
+00  SFC PBA
+01  SFC PBA
+02  SFC PBA
+03  Hegemony Scout PBA
+04  Hegemony PBA
+05  Hegemony Heavy PBA
+06  Hegemony Clone
+07  Hegemony Clone Mk2
+08  Hegemony Clone Mk3
+09  Mech Biped
+0a  Pirate
+0b  Captain
+0c  Creon Pentheus
+0d  Strike Force PBA
+0e  Nikola
+0f  Nikola
+10  Nikola
+11  Nikola
+12  SFC Scout
+13  SFC Normal
+14  SFC Heavy
+15  Heg Scout
+16  Heg Normal
+17  Heg Heavy
+18  Clone 1
+19  Clone 2
+1a  Clone 3
+1b  Mech Biped
+1c  Pirate
+1d  Captain
+1e  Pentheus
+1f  Colin
+20  Nikola
+21  Nikola
+22  Nikola
+23  Nikola
+
+*** Class 02
+00  Pirate Truck
+01  Pirate Hovercraft
+02  Centauri Truck
+03  Hegemony Truck
+04  Light Tank
+05  Medium Tank
+06  Heavy Tank
+07  Harvester
+08  Artillery Cannon
+09  Damaged Harvester
+0a  Bulldozer
+0b  Earth Mover
+
+*** Class 03
+00  Camera Drone
+01  Exploding Drone
+02  Hornet Drone
+03  Spy Drone
+04  Hunter Drone
+05  Bomber Drone
+06  Swooper Drone
+07  Dropship
+08  Hegemony Transport
+09  Hegemony Cruiser
+0a  Scout Craft
+0b  Hegemony Shuttle
+0c  Pirate Transport
+0d  Centauri Transport
+0e  Unknown Aircraft
+0f  Sim Target
+10  Sim Shooter
+
+*** Class 04
+00  Crate
+01  Crate
+02  Pirate Operations Post
+03  Pirate Storage
+04  Pirate Barracks
+05  Pirate Tower
+06  Pirate Depot
+07  Pirate Tower
+08  Pirate Tower
+09  Pirate Building
+0a  Pirate Lookout Station
+0b  Petrovsk Crate
+0c  Pirate Supply Post
+0d  Bishop Steading Storage
+0e  Bishop Steading Industrial
+0f  Bishop Steading Commercial
+10  Bishop Steading Offices
+11  Bishop Steading Residence
+12  Bishop Steading Apartments
+13  Bishop Steading Residential
+14  Bishop Steading Silo
+15  Bishop Steading Granary
+16  Bishop Steading Warehouse
+17  Bishop Steading Doorway
+18  Granary
+19  Farmhouse
+1a  Shed
+1b  Farmhouse
+1c  Fencepost
+1d  Hegemony Landing Pad
+1e  Hegemony Storage
+1f  Hegemony Building
+20  Hegemony Observation Post
+21  Hegemony Command Tower
+22  Hegemony Tower
+23  Hegemony Control Station
+24  Hegemony Munitions Tower
+25  Hegemony Supply Post
+26  Hegemony Encampment
+27  Hegemony Dome
+28  Cloning Dome
+29  Hegemony Dome
+2a  Gun Tower
+2b  Cloning Dome
+2c  High-Pressure Fuel Dome
+2d  Hegemony Sensor Station
+2e  Autoturret
+2f  Proximity Mine
+30  Scanner
+31  Hegemony Pulse Cannon
+32  Barge
+33  Fuel Pod
+34  Omicron Telescope
+35  Hegemony Telescope
+36  Destroyed Telescope
+37  Damaged Telescope
+38  Research Building
+39  Research Building
+3a  Bridge
+3b  Observatory Building
+3c  Power Structure
+3d  Smoke
+3e  Mine
+3f  TARGET X
+40  Damaged Dome
+41  Damaged Building
+42  Bridge
+43  Bridge
+44  Obelisk
+45  Heavy Turret
+46  Turret
+47  Practice Turret
+48  Hegemony Communications Tower
+49  Special Inst

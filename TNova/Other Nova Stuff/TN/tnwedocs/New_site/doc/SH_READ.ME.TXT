@@ -1,0 +1,34 @@
+Operation "Stone Henge"
+=======================
+
+by Joerg Fischer (jofis@cs.uni-sb.de)    7/99
+http://www-wjp.cs.uni-sb.de/~jofis/tn
+
+
+Operation "Stone Henge" is a completly new level for the 1st demo of "Terra Nova
+- Strike Force Centauri" a brilliant game by Looking Glass (www.lglass.com).
+
+It was designed with "TNEdit V0.64a" and "EdMis V0.1". It's landscape is based
+on "MAP2.RES" of the full version of Terra Nova. It features a new debriefing,
+new weaponry for the pirates and the captains, new objects (already in the game,
+but never used there) and a lot of fun. This level isn't intendet for beginners!
+It's for people who know how to operate a PBA under battle conditions. It is not
+extremly easy to archive the mission goal, but if you're trained well, you can
+make it in under 10 minutes (please send me a screenshot, if you do so!).
+
+Three remarks for the gameplay:
+  
+     1) Use your drones to check where the enemies are - the favourite way to
+        die is to be rushed from the side by an unseen pirate!
+
+     2) Think strategically! This is Terra Nova you're playing, not DOOM!
+
+     3) Don't shoot at the SFC Troops stationed at the spaceport!
+     
+
+If you like, feel free to send me an email and check my web site next week for 
+new releases!
+
+Have a lot of fun, 
+Joerg Fischer, 07/07/99
+

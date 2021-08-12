@@ -1,0 +1,33 @@
+  0 (00)    <no weapon>
+  1 (01)    Flare Launcher
+  2 (02)    Smoke Grenade
+  3 (03)    Grenade Launcher
+  4 (04)    Laser
+  5 (05)    Multipulsar
+  6 (06)    Particle Beam
+  7 (07)    Railgun
+  8 (08)    EM Emitter
+  9 (09)    Thermal Disruptor
+ 10 (0a)    Missile Launcher
+ 11 (0b)    Ionic Fusion Rifle
+ 12 (0c)    SIR Mark IV
+ 13 (0d)    M-B Cannon
+ 14 (0e)    M-B Accelerator
+ 15 (0f)    Pulsar
+ 16 (10)    Particle Beam
+ 17 (11)    Grenade Launcher
+ 18 (12)    Pirate Pulsar
+ 19 (13)    Pirate Heavy Pulsar
+ 20 (14)    Pirate Particle Beam
+ 21 (15)    Pirate Grenade
+ 22 (16)    Heg Particle Beam
+ 23 (17)    Heg Railgun
+ 24 (18)    Heg Thermal Disruptor
+ 25 (19)    Heg Pulsar
+ 26 (1a)    Heg Heavy Part Beam
+ 27 (1b)    Heg Tripulsar
+ 28 (1c)    Heg EM Emitter
+ 29 (1d)    Heg Grenade Launcher
+ 30 (1e)    Heg Missile Launcher
+ 31 (1f)    Heg Heavy Grenade
+ 32 (20)    Heg Heavy Missile

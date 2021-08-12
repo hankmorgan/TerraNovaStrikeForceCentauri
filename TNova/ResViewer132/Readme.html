@@ -1,0 +1,465 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title></title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<pre>
+<font color="#000080" size="5"><strong><u>ResViewer v1.32 for Flight Unlimited</u></strong></font>
+</pre>
+
+<pre><font color="#000000"><strong><u>Standard Disclaimer</u></strong></font>
+
+ResViewer is provided as is and comes with no warranty of any kind. 
+While every attempt has been made to provide a stable product 
+there can be no guarantee and the author assumes no liability
+for any damages resulting from the use or misuse of this software.
+You use ResViewer at your own risk and if you do not agree to these 
+terms you should delete ResViewer immediately.</pre>
+
+<pre>ResViewer is provided as FREEWARE and may not be distributed as part
+of any software package or bundled CD-ROM without written permission
+from the author.
+
+</pre>
+
+<pre><font color="#FF0000" size="4"><strong><u>Table of Contents</u></strong></font></pre>
+
+<ol>
+    <li><pre><a href="#Description"><font color="#0000FF"
+size="3">Description</font></a></pre>
+    </li>
+    <li><pre><a href="#Ack"><font color="#0000FF" size="3">Acknowledgements</font></a></pre>
+    </li>
+    <li><pre><a href="#Install"><font color="#0000FF" size="3">Installation</font></a></pre>
+    </li>
+    <li><pre><a href="#New"><font color="#0000FF" size="3">What's New?</font></a></pre>
+    </li>
+    <li><pre><a href="#Know"><font color="#0000FF" size="3">Things You Need To Know</font></a></pre>
+        <pre><font color="#008000">	</font><a href="#FileTypes"><font
+color="#008000">Known File Types</font></a></pre>
+        <pre><font color="#008000">	</font><a href="#AboutImages"><font
+color="#008000">Note about images</font></a></pre>
+        <pre><font color="#008000">	</font><a href="#KnownIssues"><font
+color="#008000">Known Issues</font></a></pre>
+    </li>
+    <li><pre><a href="#Usage"><font color="#0000FF" size="3">Usage</font></a></pre>
+        <pre><font color="#0000FF" size="3">	</font><a
+href="#Goto"><font color="#008000">Goto Feature</font></a></pre>
+<pre><font color="#0000FF" size="3">	</font><a
+href="#AircraftName"><font color="#008000">Changing Aircraft Name</font></a></pre>
+        <pre><font color="#008000">	</font><a href="#3DModels"><font
+color="#008000">Viewing 3D Models</font></a></pre>
+        <pre><font color="#008000">	</font><a href="#Exporting"><font
+color="#008000">Exporting Files</font></a></pre>
+        <pre><font color="#008000">	</font><a href="#Importing"><font
+color="#008000">Importing Files</font></a></pre>
+    </li>
+    <li><pre><a href="#AppendixA"><font color="#0000FF" size="3">Appendix - Interesting .res Files</font></a><font
+color="#008000" size="3">	</font></pre>
+    </li>
+</ol>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<pre><a name="Description"><font color="#000080"><strong><u>Description</u></strong></font></a>
+
+ResViewer lets you view and modify the resources of Flight Unlimited III
+This includes: aircraft textures, 3D models, panels, cockpit art, sounds, menus, maps etc.
+(It will also work with some of the FU2 resources)
+</pre>
+
+<pre><em>Please send me any bug reports, questions, suggestions and comments</em>.</pre>
+
+<pre><font color="#008000"><strong>Gideon Pertzov </strong></font>
+<a href="mailto:pertzov@netvision.net.il">pertzov@netvision.net.il</a>
+<a href="http://www.geocities.com/alive.geo/flight3.html">http://www.geocities.com/alive.geo/flight3.html</a>
+</pre>
+
+<pre><a name="Ack"><font color="#000080"><strong><u>Acknowledgements</u></strong></font></a>
+
+BMP routines based on code by Colosseum Builders, Inc.
+Compress/Uncompress uses external utilities: PKZIP25 and DCL2ZIP by PKWARE Inc.
+Interface based on VisualFX code by Zoran M. Todorovic - SCA Software International S.A.
+The rest of the code is mine :)
+</pre>
+
+<p>&nbsp;</p>
+
+<pre><a name="Install"><font color="#000080"><strong><u>Installation</u></strong></font></a>
+
+1. Unzip ResViewer.zip to a folder of your choice (e.g. C:\ResViewer )
+2. Run ResViewer.exe
+
+<font color="#400080">Make sure you have enough free disk-space (50Mb or more) for temporary
+Files created during the operation of the program.
+(Temporary files will be deleted when you exit the ResViewer)</font></pre>
+
+<table border="1" cellpadding="2" bgcolor="#FFFF00">
+    <tr>
+        <td><font color="#FF0000"><strong>Always BACKUP your
+        original .res files before modifying them</strong></font></td>
+    </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<pre><a name="New"><font color="#000080"><strong><u>What's New?</u></strong></font></a>
+</pre>
+<pre><font color="#0080C0"><u>Version 1.32</u></font></pre>
+* <a href="#AircraftName">Aircraft name can now be changed</a> without exporting/importing 
+<pre><font color="#0080C0"><u>Version 1.3</u></font>
+
+* New <a href="#Goto"><font color="#0000FF">Goto</font></a><font
+color="#0000FF"> </font><font color="#000000">feature lets you jump straight to aircraft voices, sounds, textures, 3D models, palette and cockpit resources</font></pre>
+
+<pre>* Moving parts are now rendered when viewing 3D models (parts are not animated but they are visible)</pre>
+
+<pre>* Improved support for FU2 aircraft- textures and 3D models are now viewed/exported/imported correctly</pre>
+
+<pre>
+
+<font color="#0080C0"><u>Version 1.2</u></font>
+
+* New <a href="#Importing"><font color="#0000FF">Import-&gt;Script</font></a> feature lets you import multiple files</pre>
+
+<pre>* Added support for <a href="#ExportOptions"><font
+color="#0000FF">Corel PhotoPaint palettes</font></a> (.cpl)</pre>
+
+<pre>* 3D routines optimized for better performance</pre>
+
+<pre>* Added <a href="#3DModels"><font color="#0000FF">keyboard support to 3D models control</font></a></pre>
+
+<pre>* Updated resource descriptions</pre>
+
+<pre>* ResViewer now &quot;remembers&quot; ALL last used folders (Open, Import, Export)</pre>
+
+<pre>* Fixed display bug with the Beechjet under-wing textures 
+
+</pre>
+
+<pre><font color="#0080C0"><u>Version 1.1</u></font>
+
+* Added support for viewing 3D models</pre>
+
+<pre>* Name of currently open file now appears in the Title Bar</pre>
+
+<pre>* ResViewer now &quot;remembers&quot; the last File-&gt;Open folder and Export-&gt;Multiple folder</pre>
+
+<pre>* The Info Window (bottom right) now displays additional information:
+  - Dimensions and color depth for images
+  - Number of polygons for 3D models
+
+</pre>
+
+<pre><a name="Know"><font color="#0000FF"><strong><u>Things You Need To Know</u></strong></font></a><strong><u>
+</u></strong>
+The resources are stored in files with a .res extension, these files reside in
+Sub-folders under the main Flight3 folder.
+To find the .res files simply do a search for *.res under your main Flight3 folder
+(For a list of interesting .res files see the end of this file)</pre>
+
+<pre>The .res files contain resources of different types - sounds, images, 3d models etc.
+Some of the file formats I have been able to identify, these files will be displayed
+in the ResViewer according to their file-types (WAV files can be played, textures are
+displayed as bitmaps etc.) 
+File formats which are still unknown will be displayed in their original format in 
+Hex representation.
+</pre>
+
+<pre><a name="FileTypes"><font color="#0000A0"><u>Known File Types:</u></font></a>
+
+<font color="#008000">3D Models</font> - rendered in 3D (can be rotated and zoomed in/out)
+<font color="#008000">Sounds</font>    - can be played from inside the ResViewer
+<font color="#008000">Images</font>    - displayed as bitmaps
+<font color="#008000">Palettes</font>  - displayed as a table of palette entries</pre>
+
+<pre>You can also view these files in their original format
+By selecting <font color="#800040">View -&gt; As Hex</font> from the View menu.
+</pre>
+
+<pre><a name="AboutImages"><font color="#0000A0"><u>Note about images:</u></font></a>
+
+Many images are in 8-bit format and require a palette to display correctly.
+Since the palette is usually stored separately from the image, 
+ResViewer uses the first palette it finds in the .res file as the default palette
+This may cause some of the images to look &quot;strange&quot; since they will use the wrong palette.</pre>
+
+<pre>If the .res file contains more than one palette you can cycle between the palettes
+by using the <font color="#800040">&lt; &gt;</font> keys (no SHIFT).
+You can select a palette directly by using the number keys <font
+color="#800040">1-9</font>
+(e.g. click 4 to use the 4th palette in the .res file, if it exists)</pre>
+
+<pre>When viewing a palette you can select it as the current palette by clicking the
+&quot;Make Current Palette&quot; button.</pre>
+
+<pre><a name="KnownIssues"><font color="#0000A0"><u>Known Issues:</u></font></a>
+
+* Changing the current palette re-loads the image and may take a few seconds</pre>
+
+<pre>* Some images in sky.res and mainmen.res can not be viewed as bitmaps
+  Support for these images may be implemented in future updates
+
+</pre>
+
+<p>&nbsp;</p>
+
+<pre><a name="Usage"><font color="#0000A0"><strong><u>Usage</u></strong></font></a>
+
+Open a .res file by selecting <font color="#800040">Open</font> from the <font
+color="#800040">File</font> menu or by clicking the <font
+color="#800040">Open File</font> icon.
+After the .res file is opened, you will see in the left pane a list of all the files it contains 
+To view a file - click on its name 
+Some files contain several items, to view the list of items
+click on the + sign next to the file name.
+In the bottom right you will see information about the currently selected item
+(Type, Resource Id, Compressed size and Uncompressed size)</pre>
+
+<pre><font color="#0000FF">NOTE:</font> some files are large (megabytes) and take several seconds to display
+      This also applies to items inside a large file, even if the item is small
+      it may take some time to load.
+
+</pre>
+
+<pre><a name="Goto"><font color="#0000A0"><strong><u>Goto Feature</u></strong></font></a>
+
+The <font color="#800040">Goto menu</font> lets you jump straight to the following aircraft resources:
+
+<font color="#008000">Voices (ATC voices)
+Sounds
+Textures
+3D Models
+Palette</font><font color="#0080C0">*</font><font color="#008000">
+Cockpit</font><font color="#0080C0">*</font><font color="#008000"> (panels and interior cockpit views)</font></pre>
+
+<pre><font color="#000000">The Goto feature will skip to the <u>first resource</u> in the selected section.
+For example: if you select </font><font color="#800040">Goto -&gt; Textures </font><font
+color="#000000">you will see the first texture in the textures section.
+</font></pre>
+
+<pre><font color="#0080C0">* palette and cockpit resources are <strong><u>not</u></strong> accessible in FU2 aircraft .res files</font>
+</pre>
+<pre><a name="AircraftName"><font color="#0000A0"><strong><u>Changing Aircraft Name</u></strong></font></a>
+
+Open the aircraft's .res file with ResViewer then find the File with
+Resource ID 2052
+It is usually the first File with a '+' sign next to it.
+For example: File 86 in trainer.res
+Click on this File and you will be displayed with a form where you can change the name</pre>
+
+<pre><a name="3DModels"><font color="#0000A0"><strong><u>Viewing 3D Models</u></strong></font></a>
+
+3D models can be found in each aircraft's .res file (beechjet.res, trainer.res etc.)
+The models' location is different for each .res file but generally they are located
+after the aircraft exterior textures.
+
+To go straight to the 3D models select <font color="#800040">Goto -&gt; 3D models</font> from the menu.</pre>
+
+<pre>A few examples to get you started:</pre>
+
+<pre>Mooney Bravo - bravo.res     Files 79 - 96
+Trainer      - trainer.res   Files 67 - 83
+Windhawk     - windhawk.res  Files 68 - 85</pre>
+
+<pre>You can rotate the model, zoom in/out and display it as a textured model or as a wireframe</pre>
+
+<pre><font color="#008000">Rotation:</font> Click &amp; Hold the <font
+color="#800040">left mouse button</font> (inside the viewing area)
+	  Move the mouse to rotate the model around two axes
+          (To rotate it around the third axis, click &amp; hold the <font
+color="#800040">CTRL</font> key)</pre>
+
+<pre>          You can also rotate the model by using the <font
+color="#800040">Arrow Keys</font> and the <font color="#800040">PageUp</font>/<font
+color="#800040">PageDown</font> keys	
+	  (You must first click with the mouse inside the viewing window)	
+</pre>
+
+<pre><font color="#008000">Zooming:</font>  Click &amp; Hold the <font
+color="#800040">RIGHT mouse button</font>
+ 	  Move the mouse forward to zoom in, backwards to zoom out</pre>
+
+<pre>	  You can also zoom in/out by using the &quot;<font
+color="#800040">KEYPAD +</font>&quot; and &quot;<font
+color="#800040">KEYPAD -</font>&quot; keys
+	  (You must first click with the mouse inside the viewing window)	
+</pre>
+
+<pre><font color="#008000">Display Mode:</font> Double Click inside the viewing area to switch between 
+	      Textured and Wireframe modes
+
+
+</pre>
+
+<pre><a name="Exporting"><font color="#0000A0"><strong><u>Exporting Files</u></strong></font></a>
+
+There are several export options, all are accessible from the Export menu.</pre>
+
+<pre><font color="#800040">Export -&gt; Convert </font> - Exports the currently selected file/item and converts it
+                     to a common format:
+                     * Sounds will be exported as .WAV files
+		     * Images as .BMP files
+                     * Palettes as Paint Shop Pro .pal files 
+		       or as Corel PhotoPaint .cpl files</pre>
+
+<pre><font color="#800040">Export -&gt; Original Format</font>  - Exports the currently selected file/item in its
+                             original format as stored in the .res file
+			     (unknown resources will always be exported in their
+                             original format, even if you select Export -&gt; Convert) </pre>
+
+<pre><font color="#800040">Export -&gt; Multiple</font>  - Opens a dialog with a list of all the files inside the .res file.
+                      1. click the &quot;<font color="#800040">Browse...</font>&quot; button and select a destination folder
+                      2. select multiple files from the list by using the mouse and the
+                         <font color="#800040">Control</font> and <font
+color="#800040">Shift</font> buttons (like selecting files in Explorer) 
+                      3. If you would like the files to be converted (to BMP, WAV etc.)
+                         make sure the <font color="#800040">Convert box</font> is checked.
+                      4. Click the &quot;<font color="#800040">Export</font>&quot; button
+                      5. Wait patiently while the files are being exported to the 
+                         destination folder you have selected.</pre>
+
+<pre> 		      The files will be named using the following convention:
+                      &lt;<font color="#008000">res file name</font>&gt;_&lt;<font
+color="#0000FF">index</font>&gt;_&lt;<font color="#FF0000">resource id</font>&gt;.&lt;<font
+color="#808080">extension</font>&gt;
+                     </pre>
+
+<pre>                      For example, the 3rd file in beechjet.res will be named:</pre>
+
+<pre>                      <font color="#008000">beechjet</font>_<font
+color="#0000FF">003</font>_<font color="#FF0000">11005</font>.<font
+color="#808080">wav</font></pre>
+
+<pre><a name="ExportOptions"><font color="#800040">Export -&gt; Options</font></a>  -  Lets you choose your desired palette format
+		      Supported formats: 
+                      1) PaintShop Pro
+		      2) Corel PhotoPaint
+
+</pre>
+
+<pre><a name="Importing"><font color="#0000A0"><strong><u>Importing Files</u></strong></font></a>
+</pre>
+
+<table border="1" cellpadding="2" bgcolor="#FFFF00">
+    <tr>
+        <td><font color="#FF0000">*** Be sure to BACKUP the
+        original .res file before importing - there is NO UNDO!
+        ***</font></td>
+    </tr>
+</table>
+
+<pre><font color="#0000FF">NOTE:</font> Importing a file (even a very small file) takes a long time, please wait patiently
+      until the import process is completed.</pre>
+
+<pre>There are two Import options:
+
+<font color="#800040">Import -&gt; Single</font>  - Imports a file to replace the currently selected file/item.
+<font color="#800040">Import -&gt; Script </font> - Lets you import multiple files by creating an import script
+		    </pre>
+
+<pre><font color="#0000A0"><u>Instructions for Import Script:</u></font>
+
+1. Open a .res file (for example: trainer.res)
+2. Select <font color="#800040">Import-&gt;Script</font> from the menu
+3. In the &quot;Import Script&quot; dialog you have several buttons:
+ 
+   <font color="#800040">Add</font>    - adds a script entry (a file to be imported)
+  <font color="#800040"> Remove</font> - removes entry/entries from the script
+ 
+   <font color="#800040">Load Script</font> - Loads a script file (*.rvs) 
+   <font color="#800040">Save Script</font> - Saves a script to a file
+   <font color="#800040">Import </font>     - Executes the script
+ </pre>
+
+<pre>To create a new script:
+
+1. Click <font color="#800040">Add</font>
+2. In the Add Entry dialog:
+   1) Click <font color="#800040">Browse</font> and select a file you want to import  (for example: PanelDayIFR.bmp)
+   2) Fill the <font color="#800040">File number</font> (for example: 99)
+   3) Fill the <font color="#800040">Item number</font> (if there are no items in this file, fill 0 )
+   4) Click <font color="#800040">OK</font>
+   You will see a new entry in the script window.</pre>
+
+<pre>3. Repeat the above steps to add more entries.</pre>
+
+<pre>To remove entries, select entry/entries by clicking on them (in the File column) and then click <font
+color="#800040">Remove</font>
+</pre>
+
+<pre>When you're finished adding entries, <strong><u>you MUST Save the script before you can execute it</u></strong>.</pre>
+
+<pre><font color="#FF0000"><strong>*** IMPORTANT ***</strong></font><strong>
+</strong><font color="#0000A0"><strong>Save the script in the same folder as the files you want to import !!!
+This means all the files you want to import and the script file should reside
+in the SAME FOLDER.
+You can not import files if they are in different folders.</strong></font><font
+color="#FF0000"><strong>
+*****************</strong></font>
+ </pre>
+
+<pre>To execute the script click on the &quot;<font
+color="#800040">Import</font>&quot; button.
+You will see a status dialog with a progress bar and information messages about the import process.</pre>
+
+<pre><font color="#FF0000">***</font> <font color="#0000A0">Validation in this process is limited!    </font>                           <font
+color="#FF0000">***</font>
+<font color="#FF0000">***</font> <font color="#0000A0">So make sure you're importing the files into the correct Files/Items</font> <font
+color="#FF0000">***</font>
+</pre>
+
+<p>&nbsp;</p>
+
+<pre> 
+<a name="AppendixA"><font color="#0000A0"><strong><u>Appendix - Interesting .res Files</u></strong></font></a>
+
+<font color="#0000FF">- All folders relative to the main Flight3 folder.
+- Folder names may differ in international versions.</font></pre>
+
+<ul>
+    <li><pre><font color="#0080C0"><strong>Aircraft</strong></font> - All the aircraft .res files are located in the \plnpile\ folder
+           (beechjet.res, bravo.res etc.)</pre>
+    </li>
+    <li><pre><font color="#0080C0"><strong>AI Planes</strong></font> - All AI planes textures and 3D models are located in:
+            \engpile\models.res 
+            Files 1 - 249 are textures
+	    Files 250 - 538 are 3D models
+  
+</pre>
+    </li>
+    <li><pre><font color="#0080C0"><strong>Maps</strong></font> - Outer Terrain maps are located in \engpile\rfltpln.res
+       Region maps for Seattle and Sanfran located in:
+       \regions\Seattle\engpile\resreg.res 
+       \regions\Sanfran\engpile\resreg.res</pre>
+    </li>
+    <li><pre><font color="#0080C0"><strong>Sounds</strong></font> - Many .res files contain sounds, here are a few:
+         \genpile\gensnds.res
+         \genpile\plyrsnds.res
+         \genpile\tertsnds.res
+         \genpile\vcomctrl.res</pre>
+    </li>
+</ul>
+
+<pre>              All .res files in \regions\Seattle\genpile\ and in \regions\Sanfran\genpile\
+              contain region specific sounds</pre>
+
+<ul>
+    <li><pre> <font color="#0080C0"><strong>Sky</strong></font> - Sky related textures and 3D models (clouds, moon etc.) can be found in
+       \genpile\sky.res
+
+</pre>
+    </li>
+</ul>
+</body>
+</html>

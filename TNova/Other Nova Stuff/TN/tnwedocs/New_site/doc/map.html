@@ -1,0 +1,248 @@
+<html>
+<head>
+<TITLE>The TNWE Documentation: Landscape and Terrain</TITLE>
+</head>
+<BODY BGCOLOR=#000000 TEXT=#ffffff LINK=#6666ff VLINK=#6666aa ALINK=#6666aa>
+<CENTER>
+<A HREF="tnwehp.html"><IMG SRC="pic/tnwe01_sm.jpg" BORDER=0></A> <BR>
+<IMG SRC="pic/docu.jpg" BORDER=0> <BR>
+<h1><FONT COLOR=#88ffff>*** Landscape and Terrain ***</FONT></h1>
+</CENTER><BR>
+
+<BR> <BR><BR>
+
+<h2><center><font color=#8888ff>Getting started</font></center></h2>
+<font color=#aaaaaa>
+After installation of TN and the editors all you have to do to get
+started is to select which map you like to edit. 
+Depending on the TN-version you're using here is a description of how to
+get started:<BR>
+</font><BR>
+<LI> <font color=#ff8888>TN full version</font>: Here is a list of all the <A
+HREF="mission_names.txt">maps</A>. All map-files
+have the name "<font color=#ffff88><tt>MAP*.RES</tt></FONT>" 
+and are located in the "<font color=#ffff88><tt>MAPS</tt></font>"-directory on your 
+CD or -if you installed them- on your HD.<BR>
+A quick example would be <font color=#ffff88> <tt>TNEDIT {name of your
+cddrive:}\MAPS\MAP3.RES</tt> </font>
+<br><BR>
+<LI> <font color=#ff8888>TN demo 1</font>: There is only one map: 
+"<font color=#ffff88><tt>MAP50A.RES</tt></FONT>".
+It is located in the "<font color=#ffff88><tt>DATA</tt></font>"-directory
+in your TN-directory.<BR>
+A quick example would be <font color=#ffff88> <tt>TNEDIT DATA\MAP50A.RES</tt> </font>
+<bR> <br>
+<LI> <font color=#ff8888>TN demo 2</font>: There are three maps: 
+"<font color=#ffff88><tt>MAP2D.RES, MAP3D.RES, MAP4D.RES</tt></FONT>".
+They are located in the "<font color=#ffff88><tt>MAPS</tt></font>"-directory
+in your TN-directory.<BR>
+A quick example would be <font color=#ffff88> <tt>TNEDIT MAPS\MAP2D.RES</tt> </font>
+
+<BR><BR> <BR><BR>
+<h2><center><font color=#8888ff>After starting TNEDIT:</font></center></h2>
+<Center>
+You can press <font color=#ffff88><tt>CTRL+H</tt></font> to display the
+help pages. Alternatively you can download the keys-commands as <A
+HREF="tnekeys.gif">GIF</A>(16KB) or as <A HREF="tnekeys.ps">PS</A>(14KB).
+<BR>
+
+<A HREF="../gallery/tne070/TNEPIC0D.jpeg"><IMG
+SRC="../gallery/tne070/small/TNEPIC0D.jpeg"></A>
+<BR>This screen is an example what you usually get after startup. 
+Try walking around with the cursor-movement keys (a,s,w,d)! 
+<BR> <BR>
+This is an explanation of what is displayed in the statusbar:<Br>
+<A HREF="pics/statusbar.jpeg"><IMG
+SRC="pics/statusbar_sm.jpeg"></A>
+<BR>
+<font color=#ffff88>Heigth of tile under cursor</font> Values between
+-2048 and 2047 are accepted. To change the evaluation press <font
+color=#ffff88><tt>h</tt></font>.<BR>
+<font color=yellow>Note:</font> All numbers except for the X and Y
+coordinates of the cursor position are displayed and entered as 
+decimal numbers. The X and Y coordinates are displayed as hexadecimal
+numbers.<BR>
+<font color=#ffff88>Eye's heigth above ground for i-g-g-p</font> Values between
+0 and 1000 are accepted. To change the evaluation press <font
+color=#ffff88><tt>shift-y</tt></font>.<BR>
+<font color=#ffff88>x-coordinate of tile under cursor</font> Values between
+0 and 0x1ff (dec. 511) are accepted. To move the cursor along the x-axis press <font
+color=#ffff88><tt>a,d</tt></font>.<BR>
+<font color=#ffff88>y-coordinate of tile under cursor</font> Values between
+0 and 0x1ff (dec. 511) are accepted. To move the cursor along the y-axis press <font
+color=#ffff88><tt>w,s</tt></font>.<BR>
+Note: Values for the x- and the y-coordinate are displayed <font
+color=#ff8888>hexadecimal</font>!<BR>
+<font color=#ffff88>Type of the trees on tile under cursor</font> Values between
+0 and 6 are accepted. To change press <font
+color=#ffff88><tt>x,shift-x,ctrl-x</tt></font>.<BR>
+<font color=#ffff88>Shadow of tile under cursor</font> Values between
+0 and 7 are accepted. To change the shadow press <font
+color=#ffff88><tt>1,2,3,4</tt></font>.<BR>
+<font color=#ffff88>Blast of tile under cursor</font> Values are: b and X.
+To toggle press <font
+color=#ffff88><tt>b</tt></font>.<BR>
+Blasted areas look like burned in the game.<BR>
+<font color=#ffff88>Complex Rendering of in-game-graphics-preview
+(i-g-g-p) </font> Values are C and NOT-C. 
+To toggle press <font color=#ffff88><tt>shift-u</tt></font>.<BR>
+Complex rendering includes the sky and the trees. Normal rendering only
+renders the terrain.<BR>
+<font color=#ffff88>Precision of rendering in i-g-g-p</font> Values are
+dark grey, grey and white.
+To cycle press <font
+color=#ffff88><tt>ctrl-y</tt></font>.<BR>
+The lighter the better the perspective correction of near textures.<BR>
+<font color=#ffff88>Resolution of rendering of i-g-g-p</font> Values between
+1 and 4 are accepted. To cycle press <font
+color=#ffff88><tt>ctrl-b</tt></font>.<BR>
+1,2,3 and 4 equal resolutions of 80x60, 160x120, 320x240 and 640x480 pixels.
+Complex rendering always renders in 640x480 pixels.<BR>
+<font color=#ffff88>Intensity of fog in i-g-g-p</font> Values are
+n,f,h,w,i. n is the highest density, i is the lowest (no fog at all).
+To cycle press <font
+color=#ffff88><tt>ctrl-f</tt></font>.<BR>
+<font color=#ffff88>Area-Mode</font> Values are A and NOT-A
+To toggle press <font
+color=#ffff88><tt>r</tt></font>.<BR>
+If in area mode all commands are applied to the marked area. Commands
+specified with (Sp) can only apply to Single Points. Commands specified as
+(Am) can only be applied to areas.<BR>
+<font color=#ffff88>Type of mapraytrace</font> Values are R,T,D,H for 
+Mapraytraced, Topview, Depthraytraced and Heigthraytraced.
+To cycle press <font
+color=#ffff88><tt>ctrl-v</tt></font>.<BR>
+<font color=#ffff88>Scalemode of mapraytrace</font> Values are M and NOT-M.
+To toggle press <font
+color=#ffff88><tt>ctrl-o</tt></font>.<BR>
+If in scalemode, the evaluationmap will be stretched to the maximum.<BR>
+<font color=#ffff88>Type of displaymap</font> Values are S,H,T for
+Shadow, Heigth and Trees.
+To cycle press <font
+color=#ffff88><tt>ctrl-u</tt></font>.<BR>
+<BR>
+<font color=#ff8888>Some global information about terrain-handling in
+TN:</font> There are a low
+resolution and a high resolution map describing the landscape in TN.
+The high resolution map is the one you actually walk on in the game. The
+low resolution map is only used when you look outside this inner area, so
+it's mostly used to display the mountains at the end of the world (namely:
+the horizon). Currently only the high resolution map can be edited in
+TNEdit. To edit the lowres map you have to use the map-export (<font
+color=#ffff88><tt>shift-e</tt></font>) and the map-import (<font
+color=#ffff88><tt>shift-i</tt></font>) functions and edit the exported
+heigthmap with an ordinary painting program. <bR> Each point in the map
+consists of four values: The heigth of the upper left corner in the range
+between -2048 and 2047. The texture the tile is covered with and the
+orientation of this texture (each texture can be rotated in steps of 90°).
+The amount of sunlight on that square (value range between 0 and 7). 
+The blast bit: This determines whether the square is burned (like after
+a tree has burned, the earth under the tree is burned). This image should
+demonstrade the structure of the maps in TN:<BR>
+
+<A HREF="mapdet_b2.jpeg"><IMG SRC="mapdet_b2_sm.jpeg"></A>
+<BR> <bR>
+There is one additional attribute each square of 2x2 tiles: <font
+color=#aaaa88>The tree type.</font>
+This attribute determines whether and which trees "grow" on the tiles.
+There are 6 different types. The best way to understand the tree type is
+to use the <font color=#ffff88><tt>x</tt></font> and <font
+color=#ffff88><tt>shift-x</tt></font> keys to set the "Tree="-value
+displayed in the status bar to a value different from 0 and then to press
+the <font color=#ffff88><tt>ctrl-u</tt></font> key to select "T" as
+the "Type of displaymap" (T means that trees are displayed). Now press
+<font color=#ffff88><tt>x</tt></font> and <font color=#ffff88><tt>
+shift-x</tt></font> and take a look what is changing. <font
+color=#aa8888>Note:</font> You must be in normal zoomed mode (see below)
+and on a map located on planet 0 or 4 to be able to see any tree. 
+Display of trees is not yet supported for planet 1,2 and 3! To learn what's
+about the planets, please read below!
+
+<BR> <BR>
+<BR> 
+Press <font color=#ffff88><tt>p</tt></font> to toggle zoomed and unzoomed
+display. Zoomed you see above and this is unzoomed (on a different map ;):
+<BR><A HREF="../gallery/tne070/TNEPIC02.jpeg"><IMG
+SRC="../gallery/tne070/small/TNEPIC02.jpeg"></A>
+
+<BR> <BR>
+Press <font color=#ffff88><tt>f</tt></font> to toggle between fast and
+normal drawing mode in any zoom-mode.
+<BR>
+(Fast mode looks really ugly and is intended only for slow computers.)
+<BR>
+zoomed, fast
+<A HREF="pics/jmr_mapedit_shadow_zoomed_fast.jpeg">
+<IMG SRC="pics/sm/jmr_mapedit_shadow_zoomed_fast.jpeg"></A>
+<A HREF="pics/jmr_mapedit_shadow_zoomed_normal.jpeg">
+<IMG SRC="pics/sm/jmr_mapedit_shadow_zoomed_normal.jpeg"></A> 
+zoomed, normal
+<BR>
+unzoomed, fast
+<A HREF="pics/jmr_mapedit_shadow_fast.jpeg">
+<IMG SRC="pics/sm/jmr_mapedit_shadow_fast.jpeg"></A>
+<A HREF="pics/jmr_mapedit_shadow_normal.jpeg">
+<IMG SRC="pics/sm/jmr_mapedit_shadow_normal.jpeg"></A>
+unzoomed, normal
+<BR>
+<BR><BR>
+Press <font color=#ffff88><tt>v</tt></font> to open the tile texture
+selection menu:<BR>
+<A HREF="../gallery/tne070/TNEPIC08.jpeg"><IMG
+SRC="../gallery/tne070/small/TNEPIC08.jpeg"></A><BR>
+Use <font color=#ffff88><tt>a,s,w,d</tt></font> to select the tile,
+press <font color=#ffff88><tt>space</tt></font> to choose it as new
+texture or <font color=#ffff88><tt>v</tt></font> to abort the selection.
+<BR>
+Back in the mapeditor you can press <font color=#ffff88><tt>space</tt></font>
+to set the texture again.
+<BR><BR><BR>
+What's about the <font color=#ff8888>Planets</font>? Well, in the
+TN-Demos, all missions take place on an earth like planet, which numbers
+are 0 and 4. <A HREF="../gallery/tne070/tnd21b.jpg">0 is the planet during the
+day</A> and <A HREF="../gallery/tne070/NIGHT3.jpeg">4 during night</A>.
+Actually in the demo there is only the daylight-version of this planet
+available.
+In the full version of TN there are three more planets: <A
+HREF="../gallery/tne070/ICY02.jpeg">Planet 1</A> is an icy
+cold planet, <A HREF="../gallery/tne070/SARAH4.jpeg">planet 2</A> is a 
+sandy hot planet and <A HREF="../gallery/tne070/MOON2.jpeg">planet 3</A> 
+is a moon. If you specify a map to be loaded into TNEDIT, automatically
+the planet specified in the map-file will be loaded. Nevertheless, you can
+specify an alternative planet on the command line. If you save the map, 
+the planet will be changed in the map-file to the planet you've specified.
+Be careful: If you change a planet in a map-file, then you have to
+change the planet in the miss-file that describes the map. See the
+<A HREF="obj.html">EdMiss-Section</A> for a description of the 
+miss-file!
+
+<BR><BR><BR>
+Press <font color=#ffff88><tt>j</tt></font> to toggle the display of
+the sideview evaluation lines and the normal mapedit mode.<BR>
+<A HREF="../gallery/tne070/TNEPIC00.jpeg"><IMG
+SRC="../gallery/tne070/small/TNEPIC00.jpeg"></A><BR>
+Sideview allows you to see the terrain your editing from the side thus
+allowing you to get a better understanding of the evaluation of the
+terrain.<BR>
+With <font color=#ffff88><tt>shift-b</tt></font> you can blur the
+heigth. This means that the evaluation will get smoother and less bumpy.
+<BR>
+With <font color=#ffff88><tt>h</tt></font> you can set the heigth and
+with <font color=#ffff88><tt>n</tt></font> you can set the current heigth
+again without having to type in the numbers again.
+
+<BR> <BR> <BR> <BR>
+<BR> <BR> <BR> <BR>
+Documentation of this stuff is missing: <BR>
+<LI>Area mode
+<LI>Display Map
+<LI>Map overview
+<LI>IGGP
+<LI>Contrast heigth
+<LI>Random (tree,heigth,orientation)
+<BR> <BR> <BR> <BR>
+<BR> <BR> <BR> <BR>
+
+<CENTER>last modified: 24/9/99 - 0:50cet<BR></CENTER>
+</BODY>
+</html>

@@ -1,0 +1,126 @@
+Terra Nova map format
+---------------------
+
+
+3rd subfile is tree map (128*128*1 byte) (16 tiles form 1 tree tile)
+4th subfile is low resolution map (257*257*3 bytes)
+5th subfile is high resolution map (513*513*3 bytes)
+
+
+Different values for properties in first tile (values are hex):
+---------------------------------------------------------------
+
+tree type
+subfile     offset     no trees   tree1   tree2   tree3   tree4   tree5   tree6   tree7
+---------------------------------------------------------------------------------------
+sub3        00000000   00         01      02      03      04      05      06      07
+
+blast
+subfile     offset     not blasted   blasted
+--------------------------------------------
+sub5        00000000   88            C8
+
+texture
+subfile     offset     tex1   tex2   tex3   ...   tex62   tex63   tex64
+-----------------------------------------------------------------------
+sub5        00000000   80     81     81           BD      BE      BF
+
+shadow
+subfile     offset     shadow0   shadow1   shadow2   shadow3   shadow4   shadow5   shadow6   shadow7
+----------------------------------------------------------------------------------------------------
+sub5        00000000   08        88        08        88        08        88        08        88
+            00000001   60        60        61        61        62        62        63        63
+
+rotation
+subfile     offset     0 deg   90 deg   180 deg   270 deg
+---------------------------------------------------------
+sub5        00000001   60      64       68        6C
+
+height
+subfile     offset     -2048   -2047   ...   -2033   -2032   ...   -1   0   1   ...   2046   2047
+-------------------------------------------------------------------------------------------------
+sub5        00000001   00      10            F0      00            F0   00  10        E0     F0
+            00000002   80      80            80      81            FF   00  00        7F     7F
+
+
+The properties for 513*513 tiles are stored in subfile 5, bytes XX, YY and ZZ for each (values are dec):
+--------------------------------------------------------------------------------------------------------
+How to get value:
+-----------------
+
+blast:      yes if (XX > 191) or ((XX >= 63) and (XX <= 127))
+
+texture:    if (XX > 191) then XX = (XX - 64)
+            if (XX > 127) then XX = (XX - 128)
+            if (XX > 63) then XX = (XX - 64)
+            XX is texture
+
+shadow:     YY = YY AND 00001111b
+            if (YY < 128)
+                shadow0 if (YY == 0 or 4 or 8 or 12)
+                shadow2 if (YY == 1 or 5 or 9 or 13)
+                shadow4 if (YY == 2 or 6 or 10 or 14)
+                shadow6 if (YY == 3 or 7 or 11 or 15)
+            if (XX >= 128)
+                shadow1 if (YY == 0 or 4 or 8 or 12)
+                shadow3 if (YY == 1 or 5 or 9 or 13)
+                shadow5 if (YY == 2 or 6 or 10 or 14)
+                shadow7 if (YY == 3 or 7 or 11 or 15)
+
+rotation:   YY = YY AND 00001111b
+                0deg if YY is 0...3
+                90deg if YY is 4...7
+                180deg if YY is 8...11
+                270deg if YY is 12...15
+
+height:     YY = YY AND 11110000b
+            if (ZZ >= 128)
+                height is (ZZ * 16) + (YY / 16) - 4096
+            if (ZZ <= 127)
+                height is (ZZ * 16) + (YY / 16
+            height is 0 if (YY == 0) and (ZZ == 0)
+
+
+How to set value (old value must be removed first):
+---------------------------------------------------
+
+blast:      if blasted then XX = (XX + 64)
+
+texture:    XX = (XX + texture no) [0...63]
+
+shadow:     if odd shadow then XX = (XX + 128)
+            YY = YY + 0 (if shadow is 0 or 1)
+            YY = YY + 1 (if shadow is 2 or 3)
+            YY = YY + 2 (if shadow is 4 or 5)
+            YY = YY + 0 (if shadow is 6 or 7)
+
+rotation:   YY = YY + 0 if 0deg
+            YY = YY + 4 if 90deg
+            YY = YY + 8 if 180deg
+            YY = YY + 12 if 270deg
+
+height:     if height is 0 then (ZZ = 0)
+            if (height > 0)
+                ZZ = floor(height/16)
+                YY = YY + (16 * (height - ZZ))
+            if (height < 0)
+                ZZ = 128 + floor((2048 + height) / 16)
+                YY = YY + (16 * (2048 + height))
+
+
+Low-resolution map (subfile 4):
+-------------------------------
+
+        257
+---------------------
+|      64*257       |
+|                   |
+|. . -----------. . |
+|128 | 128*128 |128 |
+| *  |same area| *  |257
+| 64 |  as in  | 65 |
+|    | highres |    |
+|. . |_________|. . |
+|                   |
+|      65*257       |
+|___________________|
